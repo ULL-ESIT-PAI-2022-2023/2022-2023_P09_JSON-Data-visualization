@@ -111,8 +111,64 @@ El objeto de estos fragmentos de código es ofrecer al alumnado un esqueleto sim
 de partida para sus propios diseños, siendo el objetivo de esta práctica leer datos (de diverso tipo)
 procedentes de una URL remota y representarlos gráficamente en un lienzo (canvas) de HTML5.
 
+### Una clase para la representación gráfica de datos
 
+Desarrolle un programa `bar-chart-client.ts` que permita la representación gráfica de datos en formato
+histograma (diagrama de barras).
+Utilice como referencia para la apariencia de su aplicación
+[este diagrama](https://data.oecd.org/chart/5RTs)
+(datos de la OCDE) que representa el número de camas hospitalarias por cada 1000 habitantes para diferentes países.
 
+pero tenga en cuenta que los datos a representar pudieran ser éstos o cualesquiera otros susceptibles de
+representarse mediante un diagrama de barras.
+De la referencia anterior, lo único que ha de imitar es el aspecto: colores, disposición de los elementos de
+la gráfica, etc. omitiendo los aspectos interactivos de la misma.
+
+La aplicación que ha de realizar debe basarse en una clase *BarChart* que ha de desarrollar.
+La interfaz pública de esa clase es la que ha de dibujar en el canvas un diagrama de barras.
+Los datos que se presenten en la gráfica han de ser capturados por su aplicación desde un servidor externo a
+través de alguna URL pública. 
+Utilice para ello, como punto de partida la aplicación expuesta en el apartado
+anterior.
+Elija para los datos que represente su aplicación, algunos que sean de su interés: deportes, demografía, música, cine, geografía, ... 
+Es muy fácil hoy en día hallar fuentes abiertas de diverso tipo de datos. Elija la que más se ajuste a sus
+intereses.
+
+Identifique en su aplicación las diferentes clases que pudieran intervenir en su diseño así como la relación
+entre ellas y desarrolle un diagrama UML para esas clases, que ha de añadir a la página índice de esta
+práctica.
+Asegúrese de la corrección de su diagrama UML.
+
+La visualización de la ejecución del programa se realizará a través de una página web alojada
+en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
+
+[1] `http://10.6.129.123:8080/turing-alan-bar-chart.html`
+
+en la que se embeberá un lienzo (canvas) para dibujar el conjunto de puntos y su polígono envolvente.
+Sustituya *Alan Turing* por su nombre y apellido en la URL de su página
+ la dirección IP anterior por la correspondiente a su máquina IaaS.
+
+La web [1] mostrará un lienzo (canvas) que imitará en lo posible la página de referencia.
+
+Si le resulta útil, utilice lo que haya aprendido de CSS para hacer que la apariencia de su aplicación sea lo
+más parecida posible a la de referencia.
+No se propone en esta práctica que utilice elementos interactivos (botones, campos de texto, selectores,
+etc.).
+
+Diseñe asimismo otra página HTML simple 
+
+[2] `http://10.6.129.123:8080/index.html`
+
+que sirva de "página índice" para los ejercicios de la sesión de evaluación de la práctica.
+La página [1] será uno de los enlaces de [2] y a su vez [1] tendrá un enlace "Home" que apunte a [2].
+Enlace también en la página índice [2] la página que contiene la documentación de su proyecto, generada con
+Typedoc.
+
+Incluya una tercera página
+[3] `http://10.6.129.123:8080/uml.html`
+que muestre el diagrama UML de las clases que intervienen en su aplicación.
+
+Las siguientes deben tomarse como especificaciones adicionales de la aplicación a desarrollar:
 
 ## Referencias
 * [Fetch](https://javascript.info/fetch)
