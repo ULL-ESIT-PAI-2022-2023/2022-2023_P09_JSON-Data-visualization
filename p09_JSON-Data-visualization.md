@@ -41,7 +41,7 @@ y que es capaz de generar documentación para sus programas utilizando la herram
 
 ### Indicaciones de caracter general
 
-La aplicación que desarrolle ha de ser orientados a objetos.
+La aplicación que desarrolle ha de ser orientada a objetos.
 Ponga en práctica en su desarrollo los fundamentos, principios y buenas prácticas de la OOP así como los
 conocimientos que haya adquirido en el uso de patrones de diseño.
 
@@ -81,15 +81,6 @@ el que se ejecuta un probrama programas se obvian ciertas restricciones de segur
 la hora de consumir datos desde un servidor externo (política 
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)).
 
-La referencias
-[Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
-y
-[A Simple ExpressJS and TypeScript
-Project](https://www.codemag.com/Article/2011021/A-Simple-ExpressJS-and-TypeScript-Project)
-publicadas por un estudiante de PAI en el foro de discusiones de la asignatura pueden resultarle de interés para
-aprender sobre un proyecto como el que aquí se propone, que involucre TypeScript y 
-[Express](https://expressjs.com/).
-
 Ambos programas utilizan la API 
 [Fetch](https://javascript.info/fetch).
 En el caso del servidor Express, para leer el fichero JSON con datos de población de Tenerife desde una URL
@@ -109,6 +100,15 @@ restricciones y características que intervienen en estas comunicaciones.
 El objeto de estos fragmentos de código es ofrecer al alumnado un esqueleto simple que pueden tomar como punto
 de partida para sus propios diseños, siendo el objetivo de esta práctica leer datos (de diverso tipo)
 procedentes de una URL remota y representarlos y exponerlos gráficamente en un lienzo (canvas) de HTML.
+
+La referencias
+[Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
+y
+[A Simple ExpressJS and TypeScript
+Project](https://www.codemag.com/Article/2011021/A-Simple-ExpressJS-and-TypeScript-Project)
+publicadas por un estudiante de PAI en el foro de discusiones de la asignatura pueden resultarle de interés para
+aprender sobre un proyecto como el que aquí se propone, que involucre TypeScript y 
+[Express](https://expressjs.com/).
 
 ### Una clase para la representación gráfica de datos
 
@@ -170,6 +170,8 @@ desarrolle.
 
 ## Referencias
 * [Fetch](https://javascript.info/fetch)
+* [Express](https://expressjs.com/).
+* [TenerifeData](https://www.tenerifedata.com/).
 * [TypeDoc](https://typedoc.org/)
 * [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
