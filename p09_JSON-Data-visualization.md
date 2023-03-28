@@ -52,18 +52,14 @@ de modo que ejecutando `npm install` queden instaladas todas las dependencias de
 
 En el directorio `read-JSON-app` de esta práctica puede hallar un ejemplo de aplicación que lee datos de un
 fichero en formato JSON alojado en un servidor remoto.
-Comience por ejecutar 
-
-`npm install`
-
-para instalar los paquetes necesarios para la aplicación.
+Comience por ejecutar `npm install` para instalar los paquetes necesarios para la aplicación.
 
 A continuación, ejecute `tsc` en el directorio `www` para compilar la aplicación `read-json.ts` de ese
 directorio. 
 La compilación generará el fichero `read-json.js` que se enlaza en la página `index.html` que se encuentra en
 ese mismo directorio y que será el punto de entrada de la aplicación de ejemplo.
 
-Ejecute `npm start` para arrancar la aplicación.
+Ejecute `npm start` para iniciar la aplicación.
 Un mensaje le indicará la URL en la que puede visualizar en un navegador la aplicación.
 En la página que se abre (`index.html`) verá solamente una página con un texto explicativo.
 Si abre (*Herramientas para desarrolladores*) la consola de esa página verá que en consola se está imprimiendo
