@@ -59,10 +59,63 @@ En el desarrollo de esta práctica, utilice el depurador integrado en el navegad
 de ejecución de su programa es el correcto.
 
 
-### QuickHull
+### Lectura de datos en formato JSON desde un servidor remoto
+
+En el directorio `read-JSON-app` de esta práctica puede hallar un ejemplo de aplicación que lee datos de un
+fichero en formato JSON alojado en un servidor remoto.
+
+Comience por ejecutar 
+
+`npm install`
+
+para instalar los paquetes necesarios para la aplicación.
+
+A continuación, ejecute `tsc` en el directorio `www` para compilar la aplicación `read-json.ts` de ese
+directorio. 
+La compilación generará el fichero `read-json.js` que se enlaza en la página `index.html` que se encuentra en
+ese mismo directorio.
+
+Ejecute `npm start` para arrancar la aplicación.
+Un mensaje le indicará la URL en la que puede visualizar en un navegador la aplicación.
+En la página que se abre (`index.html`) verá solamente una página con un texto explicativo.
+Si abre (*Herramientas para desarrolladores*) la consola de esa página verá que en consola se está imprimiendo
+un vector de datos de 1736 componentes.
+
+Estudie los comentarios que figuran en la cabecera de los ficheros `read-json.ts` (directorio `www` de la
+aplicación) y `app.js` (directorio `web-server`).
+
+El programa `app.js`, similar al que se utilizó en la práctica 1 de la asignatura, configura un servidor de
+ficheros basado en Express, mientras que `read-json.ts` es el programa principal que consume los datos desde
+el servidor local.
+Tal como se explica en la documentación de estos programas, consumiendo los datos desde un mismo servidor en
+el que se ejecutan ambos programas, obviamos ciertas restricciones de seguridad que imponen los navegadores a
+la hora de consumir datos desde un servidor externo (política CORS).
+
+Ambos programas utilizan la API 
+* [Fetch](https://javascript.info/fetch)
+En el caso del servidor local, para leer un fichero JSON con datos de población de Tenerife desde una URL
+externa, y en el caso de la aplicación cliente para leer el fichero JSON desde el *endpoint* `data` que
+configura el servidor local.
+
+El programa `read-json-ts` define la interfaz *PopulationData* (podría haberse utilizado una definición de
+tipo en lugar de una interfaz) para caracterizar el tipo de datos presentes en el fichero JSON que se va a
+leer.
+Ha de tenerse en cuenta (a) que esta definición se introduce para disponer de un control de tipos de datos más
+exhaustivo (b) que esa aplicación depende directamente del tipo de datos que se pretende leer y que habría que
+conocer a priori.
+
+No es un objetivo de esta práctica (ni de esta asignatura) el estudio de los protocolos de comunicación ni las
+restricciones y características que intervienen en estas comunicaciones.
+
+El objeto de estos fragmentos de código es ofrecer al alumnado un esqueleto simple que pueden tomar como punto
+de partida para sus propios diseños, siendo el objetivo de esta práctica leer datos (de diverso tipo)
+procedentes de una URL remota y representarlos gráficamente en un lienzo (canvas) de HTML5.
+
+
 
 
 ## Referencias
+* [Fetch](https://javascript.info/fetch)
 * [TypeDoc](https://typedoc.org/)
 * [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
