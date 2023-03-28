@@ -81,16 +81,20 @@ el que se ejecuta un probrama programas se obvian ciertas restricciones de segur
 la hora de consumir datos desde un servidor externo (política 
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)).
 
-La referencia
+La referencias
 [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
-publicada por un estudiante de PAI en el foro de discusiones de la asignatura puede resultarle de interés para
-aprender sobre cómo hacer disponibles datos a través de un servidor Express.
+y
+[A Simple ExpressJS and TypeScript
+Project](https://www.codemag.com/Article/2011021/A-Simple-ExpressJS-and-TypeScript-Project)
+publicadas por un estudiante de PAI en el foro de discusiones de la asignatura pueden resultarle de interés para
+aprender sobre un proyecto como el que aquí se propone, que involucre TypeScript y 
+[Express](https://expressjs.com/).
 
 Ambos programas utilizan la API 
 [Fetch](https://javascript.info/fetch).
-En el caso del servidor local, para leer un fichero JSON con datos de población de Tenerife desde una URL
+En el caso del servidor Express, para leer el fichero JSON con datos de población de Tenerife desde una URL
 externa, y en el caso de la aplicación cliente para leer el fichero JSON desde el *endpoint* `data` que
-configura el servidor local.
+se configura en el servidor local.
 
 El programa `read-json-ts` define la interfaz *PopulationData* (podría haberse utilizado una definición de
 tipo en lugar de una interfaz) para caracterizar el tipo de datos presentes en el fichero JSON que se va a
@@ -104,7 +108,7 @@ restricciones y características que intervienen en estas comunicaciones.
 
 El objeto de estos fragmentos de código es ofrecer al alumnado un esqueleto simple que pueden tomar como punto
 de partida para sus propios diseños, siendo el objetivo de esta práctica leer datos (de diverso tipo)
-procedentes de una URL remota y representarlos gráficamente en un lienzo (canvas) de HTML5.
+procedentes de una URL remota y representarlos y exponerlos gráficamente en un lienzo (canvas) de HTML.
 
 ### Una clase para la representación gráfica de datos
 
@@ -114,7 +118,7 @@ Utilice como referencia para la apariencia de su aplicación
 [este diagrama](https://data.oecd.org/chart/5RTs)
 (datos de la OCDE) que representa el número de camas hospitalarias por cada 1000 habitantes para diferentes países.
 
-pero tenga en cuenta que los datos a representar pudieran ser éstos o cualesquiera otros susceptibles de
+Tenga en cuenta que los datos a representar pudieran ser éstos o cualesquiera otros susceptibles de
 representarse mediante un diagrama de barras.
 De la referencia anterior, lo único que ha de imitar es el aspecto: colores, disposición de los elementos de
 la gráfica, etc. omitiendo los aspectos interactivos de la misma.
@@ -127,9 +131,9 @@ Utilice para ello, como punto de partida la aplicación expuesta en el apartado
 anterior.
 Elija para los datos que represente su aplicación, algunos que sean de su interés: deportes, demografía, música, cine, geografía, ... 
 Es muy fácil hoy en día hallar fuentes abiertas de diverso tipo de datos. Elija la que más se ajuste a sus
-intereses.
+gustos o intereses.
 
-Identifique en su aplicación las diferentes clases que pudieran intervenir en su diseño así como la relación
+Identifique en su aplicación las diferentes clases que intervienen en su diseño así como la relación
 entre ellas y desarrolle un diagrama UML para esas clases, que ha de añadir a la página índice de esta
 práctica.
 Asegúrese de la corrección de su diagrama UML.
@@ -139,14 +143,10 @@ en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
 [1] `http://10.6.129.123:8080/turing-alan-bar-chart.html`
 
-en la que se embeberá un lienzo (canvas) para dibujar el conjunto de puntos y su polígono envolvente.
+en la que se embeberá un lienzo (canvas) para mostrar la gráfica de barras.
 Sustituya *Alan Turing* por su nombre y apellido en la URL de su página
- la dirección IP anterior por la correspondiente a su máquina IaaS.
-
+y la dirección IP anterior por la correspondiente a su máquina IaaS.
 La web [1] mostrará un lienzo (canvas) que imitará en lo posible la página de referencia.
-
-Si le resulta útil, utilice lo que haya aprendido de CSS para hacer que la apariencia de su aplicación sea lo
-más parecida posible a la de referencia.
 No se propone en esta práctica que utilice elementos interactivos (botones, campos de texto, selectores,
 etc.).
 
@@ -160,10 +160,13 @@ Enlace también en la página índice [2] la página que contiene la documentaci
 Typedoc.
 
 Incluya una tercera página
+
 [3] `http://10.6.129.123:8080/uml.html`
+
 que muestre el diagrama UML de las clases que intervienen en su aplicación.
 
-Las siguientes deben tomarse como especificaciones adicionales de la aplicación a desarrollar:
+Si le resulta útil, utilice lo que haya aprendido de CSS para dotar de estilo propio a las páginas HTML que
+desarrolle.
 
 ## Referencias
 * [Fetch](https://javascript.info/fetch)
