@@ -4,10 +4,9 @@
 ### Objetivos
 Los objetivos de esta tarea son poner en práctica:
 * Gestión de ficheros remotos en formato JSON.
+* Practicar con CSS básico.
 * Manipulación, gestión, análisis y representación de datos.
 * Conceptos básicos de Programación Gráfica en TypeScript usando la API Canvas.
-* Metodologías y conceptos de diseño y Programación Orientada a Objetos en TypeScript.
-* Principios y Buenas prácticas de programación Orientada a Objetos.
 
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
@@ -42,22 +41,12 @@ y que es capaz de generar documentación para sus programas utilizando la herram
 
 ### Indicaciones de caracter general
 
-El programa que desarrolle ha de ser orientados a objetos.
-Ponga en práctica los principios de abstracción y encapsulamiento característicos 
-de la OOP así como las buenas prácticas, principios y patrones que han sido expuestos en las clases de la asignatura.
-
-Previo a la implementación de cada clase, diseñe y desarrolle un conjunto de tests para probar el correcto
-funcionamiento de todos los métodos que desarrolle.
-
-Configure para esta práctica una página web que sirva de índice para mostrar la documentación generada por
-TypeDoc para el ejercicio que se propone.
+La aplicación que desarrolle ha de ser orientados a objetos.
+Ponga en práctica en su desarrollo los principios de abstracción y encapsulamiento característicos 
+de la OOP así como las buenas prácticas, principios y patrones que ha estudiado.
 
 Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su ejercicio, 
 de modo que ejecutando `npm install` queden instaladas todas las dependencias del proyecto.
-
-En el desarrollo de esta práctica, utilice el depurador integrado en el navegador para confirmar que el flujo
-de ejecución de su programa es el correcto.
-
 
 ### Lectura de datos en formato JSON desde un servidor remoto
 
