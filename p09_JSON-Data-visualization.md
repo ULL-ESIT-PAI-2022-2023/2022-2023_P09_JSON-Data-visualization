@@ -42,8 +42,8 @@ y que es capaz de generar documentación para sus programas utilizando la herram
 ### Indicaciones de caracter general
 
 La aplicación que desarrolle ha de ser orientados a objetos.
-Ponga en práctica en su desarrollo los principios de abstracción y encapsulamiento característicos 
-de la OOP así como las buenas prácticas, principios y patrones que ha estudiado.
+Ponga en práctica en su desarrollo los fundamentos, principios y buenas prácticas de la OOP así como los
+conocimientos que haya adquirido en el uso de patrones de diseño.
 
 Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su ejercicio, 
 de modo que ejecutando `npm install` queden instaladas todas las dependencias del proyecto.
