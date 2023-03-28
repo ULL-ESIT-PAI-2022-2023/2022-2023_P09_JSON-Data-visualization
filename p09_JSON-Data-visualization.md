@@ -52,7 +52,6 @@ de modo que ejecutando `npm install` queden instaladas todas las dependencias de
 
 En el directorio `read-JSON-app` de esta práctica puede hallar un ejemplo de aplicación que lee datos de un
 fichero en formato JSON alojado en un servidor remoto.
-
 Comience por ejecutar 
 
 `npm install`
@@ -62,13 +61,18 @@ para instalar los paquetes necesarios para la aplicación.
 A continuación, ejecute `tsc` en el directorio `www` para compilar la aplicación `read-json.ts` de ese
 directorio. 
 La compilación generará el fichero `read-json.js` que se enlaza en la página `index.html` que se encuentra en
-ese mismo directorio.
+ese mismo directorio y que será el punto de entrada de la aplicación de ejemplo.
 
 Ejecute `npm start` para arrancar la aplicación.
 Un mensaje le indicará la URL en la que puede visualizar en un navegador la aplicación.
 En la página que se abre (`index.html`) verá solamente una página con un texto explicativo.
 Si abre (*Herramientas para desarrolladores*) la consola de esa página verá que en consola se está imprimiendo
 un vector de datos de 1736 componentes.
+Esos datos son los que figuran en 
+[este fichero
+JSON](https://www.tenerifedata.com/dataset/79477ca3-0ed1-4094-a386-b40e2505c8aa/resource/eafae0c8-6d48-4c3e-b2a0-802dac477022/download/poblacion-segun-sexos-y-edades-ano-)
+disponible a través del portal 
+[TenerifeData](https://www.tenerifedata.com/).
 
 Estudie los comentarios que figuran en la cabecera de los ficheros `read-json.ts` (directorio `www` de la
 aplicación) y `app.js` (directorio `web-server`).
@@ -78,7 +82,13 @@ ficheros basado en Express, mientras que `read-json.ts` es el programa principal
 el servidor local.
 Tal como se explica en la documentación de estos programas, consumiendo los datos desde un mismo servidor en
 el que se ejecutan ambos programas, obviamos ciertas restricciones de seguridad que imponen los navegadores a
-la hora de consumir datos desde un servidor externo (política CORS).
+la hora de consumir datos desde un servidor externo (política 
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)).
+
+La referencia
+[Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
+publicada por un estudiante de PAI en el foro de discusiones de la asignatura puede resultarle de interés para
+aprender sobre cómo hacer disponibles datos a través de un servidor Express.
 
 Ambos programas utilizan la API 
 * [Fetch](https://javascript.info/fetch)
