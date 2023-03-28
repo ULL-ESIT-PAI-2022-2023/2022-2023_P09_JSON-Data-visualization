@@ -75,9 +75,9 @@ aplicación) y `app.js` (directorio `web-server`).
 
 El programa `app.js`, similar al que se utilizó en la práctica 1 de la asignatura, configura un servidor de
 ficheros basado en Express, mientras que `read-json.ts` es el programa principal que consume los datos desde
-el servidor local.
-Tal como se explica en la documentación de estos programas, consumiendo los datos desde un mismo servidor en
-el que se ejecutan ambos programas, obviamos ciertas restricciones de seguridad que imponen los navegadores a
+ese servidor.
+Tal como se explica en la documentación de estos programas, consumiendo los datos desde el mismo servidor en
+el que se ejecuta un probrama programas se obvian ciertas restricciones de seguridad que imponen los navegadores a
 la hora de consumir datos desde un servidor externo (política 
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)).
 
@@ -87,7 +87,7 @@ publicada por un estudiante de PAI en el foro de discusiones de la asignatura pu
 aprender sobre cómo hacer disponibles datos a través de un servidor Express.
 
 Ambos programas utilizan la API 
-* [Fetch](https://javascript.info/fetch)
+[Fetch](https://javascript.info/fetch).
 En el caso del servidor local, para leer un fichero JSON con datos de población de Tenerife desde una URL
 externa, y en el caso de la aplicación cliente para leer el fichero JSON desde el *endpoint* `data` que
 configura el servidor local.
